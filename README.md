@@ -1,4 +1,6 @@
 # process-handler
+[![Build Status](https://travis-ci.org/craftpip/process-handler.svg?branch=master)](https://travis-ci.org/craftpip/process-handler)  
+
 Get list of running processes by name or pid, supports windows and unix
   
 I struggled to find a library that returns the processes list for the operating system.
