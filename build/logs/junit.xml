@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Process Handler" tests="1" assertions="1" failures="0" errors="0" time="0.006713">
+    <testsuite name="ProcessHandler\Test\ProcessHandlerTest" file="E:\www\htdocs\process-handler\test\ProcessHandler\Test\ProcessHandlerTest.php" tests="1" assertions="1" failures="0" errors="0" time="0.006713">
+      <testcase name="testParseRepositoryName" class="ProcessHandler\Test\ProcessHandlerTest" file="E:\www\htdocs\process-handler\test\ProcessHandler\Test\ProcessHandlerTest.php" line="6" assertions="1" time="0.006713"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

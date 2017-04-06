@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1491472196">
+  <project timestamp="1491472196">
+    <package name="Craftpip\ProcessHandler">
+      <file name="E:\www\htdocs\process-handler\src\ProcessHandler/ProcessHandler.php">
+        <class name="ProcessHandler" namespace="Craftpip\ProcessHandler">
+          <metrics complexity="4" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="11" coveredelements="0"/>
+        </class>
+        <line num="27" type="method" name="__construct" visibility="public" complexity="3" crap="12" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="31" type="stmt" count="0"/>
+        <line num="32" type="stmt" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="37" type="method" name="isWindows" visibility="private" complexity="1" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <metrics loc="40" ncloc="31" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="11" coveredelements="0"/>
+      </file>
+    </package>
+    <file name="E:\www\htdocs\process-handler\src\ProcessHandler/drivers/DriversInterface.php">
+      <metrics loc="8" ncloc="8" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <package name="Craftpip\ProcessHandler\Drivers">
+      <file name="E:\www\htdocs\process-handler\src\ProcessHandler/drivers/Unix.php">
+        <class name="Unix" namespace="Craftpip\ProcessHandler\Drivers">
+          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+        </class>
+        <line num="6" type="method" name="getAllProcesses" complexity="1" crap="2" count="0"/>
+        <line num="8" type="stmt" count="0"/>
+        <line num="10" type="method" name="getProcessByPid" complexity="1" crap="2" count="0"/>
+        <line num="12" type="stmt" count="0"/>
+        <metrics loc="12" ncloc="12" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="4" coveredelements="0"/>
+      </file>
+      <file name="E:\www\htdocs\process-handler\src\ProcessHandler/drivers/Windows.php">
+        <class name="Windows" namespace="Craftpip\ProcessHandler\Drivers">
+          <metrics complexity="7" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="42" coveredstatements="0" elements="46" coveredelements="0"/>
+        </class>
+        <line num="8" type="method" name="getAllProcesses" complexity="1" crap="2" count="0"/>
+        <line num="9" type="stmt" count="0"/>
+        <line num="10" type="stmt" count="0"/>
+        <line num="11" type="stmt" count="0"/>
+        <line num="12" type="stmt" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="15" type="stmt" count="0"/>
+        <line num="17" type="method" name="getProcessByPid" complexity="1" crap="2" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="26" type="method" name="getProcessByProcessName" complexity="1" crap="2" count="0"/>
+        <line num="27" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="32" type="stmt" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="35" type="method" name="parseOutput" visibility="private" complexity="4" crap="20" count="0"/>
+        <line num="36" type="stmt" count="0"/>
+        <line num="37" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="42" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="46" type="stmt" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="49" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="51" type="stmt" count="0"/>
+        <line num="52" type="stmt" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="54" type="stmt" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="56" type="stmt" count="0"/>
+        <line num="57" type="stmt" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <line num="59" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <metrics loc="62" ncloc="62" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="42" coveredstatements="0" elements="46" coveredelements="0"/>
+      </file>
+    </package>
+    <metrics files="4" loc="122" ncloc="113" classes="3" methods="8" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="53" coveredstatements="0" elements="61" coveredelements="0"/>
+  </project>
+</coverage>
