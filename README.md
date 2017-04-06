@@ -83,3 +83,14 @@ ProcessHandler can be installed with Composer by adding the library as a depende
     }
 }
 ```
+
+## Contribute 
+
+Please feel free to contribute or make additions.
+
+
+## Copyright and license
+
+Copyright (C) 2017 Boniface Pereira
+
+Licensed under [the MIT license](LICENSE).
