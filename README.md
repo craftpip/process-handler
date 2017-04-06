@@ -60,3 +60,26 @@ if(count($processes)){
 // get all processes 
 $allProcesses = $processHandler->api->getAllProcesses();
 ```
+
+## Methods
+```php
+$processHandler = new ProcessHandler();
+$processHandler->api->getAllProcesses();
+$processHandler->api->getProcessByPid($pid);
+```
+
+## Installation
+
+Run the composer command 
+```cmd
+composer require craftpip/process-handler
+```
+
+ProcessHandler can be installed with Composer by adding the library as a dependency to your composer.json file.
+```json
+{
+    "require": {
+        "craftpip/process-handler": "~1.0"
+    }
+}
+```
