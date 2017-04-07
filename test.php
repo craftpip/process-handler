@@ -11,3 +11,4 @@ $process = $processHandler->getProcess(12796);
 print_r($process);
 print_r($process->isRunning());
 print_r($process->getWindowTitle());
+
