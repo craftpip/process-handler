@@ -3,10 +3,11 @@
 require_once "vendor/autoload.php";
 
 $processHandler = new \Craftpip\ProcessHandler\ProcessHandler();
-$process = new \Symfony\Component\Process\Process('ls');
+$process = new \Symfony\Component\Process\Process('wait 5');
 $process->start();
 $pid = $process->getPid();
-print_r($processHandler->api->getProcessByPid($pid));
-
-
-$processHandler->api->getAllProcesses();
+echo $pid;
+$process = $processHandler->getProcess(12796);
+print_r($process);
+print_r($process->isRunning());
+print_r($process->getWindowTitle());
