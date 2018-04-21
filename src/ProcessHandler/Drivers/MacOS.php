@@ -9,7 +9,7 @@ class MacOS implements DriversInterface {
     /**
      * @return \Craftpip\ProcessHandler\Process[]
      */
-    protected $options = "pid,time,vsize,user,sess,args";
+    protected $options = "pid,time,rss,user,sess,args";
 
     function getAllProcesses () {
         $process = new Process("ps -eo $this->options");
