@@ -3,6 +3,7 @@
 namespace Craftpip\ProcessHandler;
 
 use Craftpip\ProcessHandler\Drivers\DriversInterface;
+use Craftpip\ProcessHandler\Drivers\MacOS;
 use Craftpip\ProcessHandler\Drivers\Unix;
 use Craftpip\ProcessHandler\Drivers\Windows;
 use Craftpip\ProcessHandler\Exception\ProcessHandlerException;
