@@ -38,13 +38,13 @@ class Unix implements DriversInterface {
     private function parse ($output) {
         $op = explode("\n", $output);
 
-        $processes = [];
+        $processes = array();
         foreach ($op as $k => $item) {
             if ($k < 1)
                 continue;
 
             $item = explode(" ", $item);
-            $line = [];
+            $line = array();
             foreach ($item as $i) {
                 if ($i != '')
                     $line[] = $i;

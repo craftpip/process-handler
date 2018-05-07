@@ -41,13 +41,13 @@ class MacOS implements DriversInterface {
         $op = explode("\n", $output);
 
 
-        $processes = [];
+        $processes = array();
         foreach ($op as $k => $item) {
             if ($k < 1)
                 continue;
 
             $item = explode(" ", preg_replace('!\s+!', ' ', trim($item)));
-            $line = [];
+            $line = array();
             foreach ($item as $i) {
                 if ($i != '')
                     $line[] = $i;
