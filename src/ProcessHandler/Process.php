@@ -57,7 +57,8 @@ class Process {
      * @return bool
      */
     public function isRunning () {
-        return (new ProcessHandler())->isRunning($this->getPid());
+        $process = new ProcessHandler();
+        return $process->isRunning($this->getPid());
     }
 
     /**
