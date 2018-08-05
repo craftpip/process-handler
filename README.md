@@ -66,6 +66,20 @@ if($process){
                 [cpu_time] => 0:00:00
                 [window_title] => N/A
             )
+
+    returns the following on macOS
+    [0] => Array
+            (
+                [name] => (sh)
+                [pid] => 62951
+                [session_name] =>
+                [session] => 0
+                [mem_used] => 0 KB
+                [status] => RUNNING
+                [username] => username
+                [cpu_time] => 0:00.00
+                [window_title] =>
+            )
     */
 }else{
     // process was not found.
