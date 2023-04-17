@@ -3,7 +3,7 @@
 require_once "vendor/autoload.php";
 
 $processHandler = new \Craftpip\ProcessHandler\ProcessHandler();
-$process = new \Symfony\Component\Process\Process('wait 5');
+$process = new \Symfony\Component\Process\Process(['wait 10']);
 $process->start();
 $pid = $process->getPid();
 echo $pid;
