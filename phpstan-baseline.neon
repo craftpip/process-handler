@@ -1,0 +1,156 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\Drivers\\\\DriversInterface\\:\\:getProcessByPid\\(\\) has parameter \\$pid with no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Drivers/DriversInterface.php
+
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\Drivers\\\\MacOS\\:\\:getProcessByPid\\(\\) has parameter \\$pid with no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Drivers/MacOS.php
+
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\Drivers\\\\MacOS\\:\\:parse\\(\\) has parameter \\$output with no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Drivers/MacOS.php
+
+		-
+			message: "#^Property Craftpip\\\\ProcessHandler\\\\Drivers\\\\MacOS\\:\\:\\$options has no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Drivers/MacOS.php
+
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\Drivers\\\\Unix\\:\\:getProcessByPid\\(\\) has parameter \\$pid with no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Drivers/Unix.php
+
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\Drivers\\\\Unix\\:\\:parse\\(\\) has parameter \\$output with no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Drivers/Unix.php
+
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\Drivers\\\\Windows\\:\\:getProcessByPid\\(\\) has parameter \\$pid with no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Drivers/Windows.php
+
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\Drivers\\\\Windows\\:\\:getProcessByProcessName\\(\\) has parameter \\$processName with no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Drivers/Windows.php
+
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\Drivers\\\\Windows\\:\\:parseOutput\\(\\) has parameter \\$output with no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Drivers/Windows.php
+
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\Process\\:\\:__construct\\(\\) has parameter \\$cpu_time with no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Process.php
+
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\Process\\:\\:__construct\\(\\) has parameter \\$mem_used with no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Process.php
+
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\Process\\:\\:__construct\\(\\) has parameter \\$name with no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Process.php
+
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\Process\\:\\:__construct\\(\\) has parameter \\$pid with no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Process.php
+
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\Process\\:\\:__construct\\(\\) has parameter \\$session with no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Process.php
+
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\Process\\:\\:__construct\\(\\) has parameter \\$session_name with no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Process.php
+
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\Process\\:\\:__construct\\(\\) has parameter \\$status with no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Process.php
+
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\Process\\:\\:__construct\\(\\) has parameter \\$username with no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Process.php
+
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\Process\\:\\:__construct\\(\\) has parameter \\$window_title with no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Process.php
+
+		-
+			message: "#^Property Craftpip\\\\ProcessHandler\\\\Process\\:\\:\\$cpu_time has no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Process.php
+
+		-
+			message: "#^Property Craftpip\\\\ProcessHandler\\\\Process\\:\\:\\$mem_used has no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Process.php
+
+		-
+			message: "#^Property Craftpip\\\\ProcessHandler\\\\Process\\:\\:\\$name has no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Process.php
+
+		-
+			message: "#^Property Craftpip\\\\ProcessHandler\\\\Process\\:\\:\\$pid has no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Process.php
+
+		-
+			message: "#^Property Craftpip\\\\ProcessHandler\\\\Process\\:\\:\\$session has no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Process.php
+
+		-
+			message: "#^Property Craftpip\\\\ProcessHandler\\\\Process\\:\\:\\$session_name has no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Process.php
+
+		-
+			message: "#^Property Craftpip\\\\ProcessHandler\\\\Process\\:\\:\\$status has no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Process.php
+
+		-
+			message: "#^Property Craftpip\\\\ProcessHandler\\\\Process\\:\\:\\$username has no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Process.php
+
+		-
+			message: "#^Property Craftpip\\\\ProcessHandler\\\\Process\\:\\:\\$window_title has no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/Process.php
+
+		-
+			message: "#^Call to function is_null\\(\\) with int will always evaluate to false\\.$#"
+			count: 1
+			path: src/ProcessHandler/ProcessHandler.php
+
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\ProcessHandler\\:\\:__construct\\(\\) has parameter \\$pid with no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/ProcessHandler.php
+
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\ProcessHandler\\:\\:__construct\\(\\) with return type void returns Craftpip\\\\ProcessHandler\\\\Drivers\\\\DriversInterface but should not return anything\\.$#"
+			count: 1
+			path: src/ProcessHandler/ProcessHandler.php
+
+		-
+			message: "#^Method Craftpip\\\\ProcessHandler\\\\ProcessHandler\\:\\:setPid\\(\\) has parameter \\$pid with no type specified\\.$#"
+			count: 1
+			path: src/ProcessHandler/ProcessHandler.php

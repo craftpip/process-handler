@@ -2,6 +2,4 @@
 
 namespace Craftpip\ProcessHandler\Exception;
 
-class ProcessHandlerException extends \Exception {
-
-}
+class ProcessHandlerException extends \Exception {}

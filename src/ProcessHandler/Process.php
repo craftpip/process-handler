@@ -2,14 +2,8 @@
 
 namespace Craftpip\ProcessHandler;
 
-use Craftpip\ProcessHandler\Drivers\DriversInterface;
-use Craftpip\ProcessHandler\Drivers\MacOS;
-use Craftpip\ProcessHandler\Drivers\Unix;
-use Craftpip\ProcessHandler\Drivers\Windows;
-use Craftpip\ProcessHandler\Exception\ProcessHandlerException;
-
-class Process {
-
+class Process
+{
     private $name;
 
     private $pid;
@@ -41,7 +35,8 @@ class Process {
      * @param $cpu_time
      * @param $window_title
      */
-    public function __construct ($name, $pid, $session_name, $session, $mem_used, $status, $username, $cpu_time, $window_title) {
+    public function __construct($name, $pid, $session_name, $session, $mem_used, $status, $username, $cpu_time, $window_title)
+    {
         $this->name = $name;
         $this->pid = $pid;
         $this->session_name = $session_name;
@@ -56,7 +51,8 @@ class Process {
     /**
      * @return bool
      */
-    public function isRunning () {
+    public function isRunning()
+    {
         $process = new ProcessHandler();
         return $process->isRunning($this->getPid());
     }
@@ -64,63 +60,72 @@ class Process {
     /**
      * @return mixed
      */
-    public function getName () {
+    public function getName()
+    {
         return $this->name;
     }
 
     /**
      * @return mixed
      */
-    public function getPid () {
+    public function getPid()
+    {
         return $this->pid;
     }
 
     /**
      * @return mixed
      */
-    public function getSessionName () {
+    public function getSessionName()
+    {
         return $this->session_name;
     }
 
     /**
      * @return mixed
      */
-    public function getSession () {
+    public function getSession()
+    {
         return $this->session;
     }
 
     /**
      * @return mixed
      */
-    public function getMemUsed () {
+    public function getMemUsed()
+    {
         return $this->mem_used;
     }
 
     /**
      * @return mixed
      */
-    public function getStatus () {
+    public function getStatus()
+    {
         return $this->status;
     }
 
     /**
      * @return mixed
      */
-    public function getUsername () {
+    public function getUsername()
+    {
         return $this->username;
     }
 
     /**
      * @return mixed
      */
-    public function getCpuTime () {
+    public function getCpuTime()
+    {
         return $this->cpu_time;
     }
 
     /**
      * @return mixed
      */
-    public function getWindowTitle () {
+    public function getWindowTitle()
+    {
         return $this->window_title;
     }
 

@@ -8,7 +8,8 @@ use Craftpip\ProcessHandler\Drivers\Unix;
 use Craftpip\ProcessHandler\Drivers\Windows;
 use Craftpip\ProcessHandler\Exception\ProcessHandlerException;
 
-class ProcessHandler {
+class ProcessHandler
+{
     /**
      * @var string
      */
@@ -19,9 +20,9 @@ class ProcessHandler {
      */
     public $api;
 
-    const systemMacOS = "MacOS";
-    const systemWindows = "Win";
-    const systemUnix = "Unix";
+    public const systemMacOS = 'MacOS';
+    public const systemWindows = 'Win';
+    public const systemUnix = 'Unix';
 
     /**
      * @var int
@@ -33,11 +34,12 @@ class ProcessHandler {
      *
      * @param $pid
      */
-    public function __construct ($pid = null) {
+    public function __construct($pid = null)
+    {
         $this->pid = $pid;
         $this->operatingSystem = $this->getCurrentOS();
 
-        switch($this->operatingSystem){
+        switch ($this->operatingSystem) {
             case self::systemMacOS:
                 $this->api = new MacOS();
                 break;
@@ -57,7 +59,8 @@ class ProcessHandler {
      *
      * @return $this
      */
-    public function setPid ($pid) {
+    public function setPid($pid)
+    {
         $this->pid = $pid;
 
         return $this;
@@ -72,12 +75,15 @@ class ProcessHandler {
      * @return \Craftpip\ProcessHandler\Process|boolean
      * @throws \Craftpip\ProcessHandler\Exception\ProcessHandlerException
      */
-    public function getProcess ($pid = null) {
-        if (is_null($pid))
+    public function getProcess($pid = null)
+    {
+        if (is_null($pid)) {
             $pid = $this->pid;
+        }
 
-        if (is_null($pid))
+        if (is_null($pid)) {
             throw new ProcessHandlerException('Pid is required');
+        }
 
         $process = $this->api->getProcessByPid($pid);
 
@@ -90,7 +96,8 @@ class ProcessHandler {
      *
      * @return \Craftpip\ProcessHandler\Process[]
      */
-    public function getAllProcesses () {
+    public function getAllProcesses()
+    {
         return $this->api->getAllProcesses();
     }
 
@@ -99,7 +106,8 @@ class ProcessHandler {
      *
      * @return bool
      */
-    public function isRunning ($pid = null) {
+    public function isRunning($pid = null)
+    {
         $process = $this->getProcess($pid);
 
         return !$process ? false : true;
@@ -112,11 +120,12 @@ class ProcessHandler {
      *
      * @return string
      */
-    private function getCurrentOS () {
+    private function getCurrentOS()
+    {
         switch (true) {
             case stristr(PHP_OS, 'DAR'): return self::systemMacOS;
             case stristr(PHP_OS, 'WIN'): return self::systemWindows;
-            default : return self::systemUnix;
+            default: return self::systemUnix;
         }
     }
 }

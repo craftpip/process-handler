@@ -2,16 +2,17 @@
 
 namespace Craftpip\ProcessHandler\Drivers;
 
-interface DriversInterface {
+interface DriversInterface
+{
     /**
      * @return \Craftpip\ProcessHandler\Process[]
      */
-    function getAllProcesses ();
+    public function getAllProcesses();
 
     /**
      * @param $pid
      *
      * @return \Craftpip\ProcessHandler\Process[]
      */
-    function getProcessByPid ($pid);
+    public function getProcessByPid($pid);
 }
